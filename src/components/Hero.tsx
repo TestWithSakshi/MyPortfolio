@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ArrowDown, Mail, Linkedin, Github } from 'lucide-react';
+import { Mail, Linkedin, Github } from 'lucide-react';
 
 const Hero = () => {
   return (
@@ -146,7 +146,7 @@ const Hero = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 1.0 }}
-            className="flex justify-center gap-6 pt-4"
+            className="flex justify-center gap-6 pt-6 pb-8"
           >
             <motion.a
               href="https://linkedin.com/in/vidhyashankarn"
@@ -171,28 +171,6 @@ const Hero = () => {
             >
               <Github size={22} />
             </motion.a>
-          </motion.div>
-
-          {/* Scroll Indicator */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 1, delay: 1.1 }}
-            className="pt-8"
-          >
-            <motion.button
-              onClick={() => {
-                const aboutSection = document.getElementById('about');
-                aboutSection?.scrollIntoView({ behavior: 'smooth' });
-              }}
-              animate={{ y: [0, 10, 0] }}
-              transition={{ duration: 2, repeat: Infinity }}
-              className="mx-auto flex flex-col items-center gap-3 p-3 bg-green-500 rounded-full hover:bg-green-400 transition-all duration-300 cursor-pointer group"
-              whileHover={{ scale: 1.1 }}
-            >
-              <ArrowDown size={24} className="text-black group-hover:scale-110 transition-transform" />
-            </motion.button>
-            <p className="text-sm text-gray-400 mt-4">Explore below</p>
           </motion.div>
         </div>
       </div>
