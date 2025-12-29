@@ -83,20 +83,25 @@ const Hero = () => {
                 'CI/CD',
                 'Agile',
               ].map((skill, index) => (
-                <motion.span
+                <motion.button
                   key={skill}
+                  onClick={() => {
+                    const contactSection = document.getElementById('contact');
+                    contactSection?.scrollIntoView({ behavior: 'smooth' });
+                  }}
                   initial={{ opacity: 0, scale: 0.8 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ 
                     duration: 0.5, 
                     delay: 0.8 + index * 0.08,
                   }}
-                  whileHover={{ scale: 1.05 }}
-                  className="px-4 py-2 bg-slate-900/40 backdrop-blur-sm border border-slate-800 rounded-full text-sm md:text-base 
-                           font-medium text-gray-300 hover:text-green-400 transition-colors duration-300 cursor-default"
+                  whileHover={{ scale: 1.05, boxShadow: '0 0 20px rgba(34, 197, 94, 0.5)' }}
+                  whileTap={{ scale: 0.95 }}
+                  className="px-5 py-2 bg-transparent border-2 border-green-500 rounded-full text-sm md:text-base 
+                           font-medium text-green-400 hover:bg-green-500/10 hover:text-green-300 transition-all duration-300 cursor-pointer"
                 >
                   {skill}
-                </motion.span>
+                </motion.button>
               ))}
             </div>
           </motion.div>
@@ -106,20 +111,34 @@ const Hero = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.8 }}
-            className="pt-8"
+            className="pt-4"
           >
             <motion.button
               onClick={() => {
                 const contactSection = document.getElementById('contact');
                 contactSection?.scrollIntoView({ behavior: 'smooth' });
               }}
-              whileHover={{ scale: 1.05 }}
+              whileHover={{ scale: 1.05, boxShadow: '0 0 30px rgba(34, 197, 94, 0.6)' }}
               whileTap={{ scale: 0.95 }}
-              className="inline-flex items-center gap-3 bg-gradient-to-r from-green-500 to-cyan-500 text-black px-10 py-4 rounded-full font-bold text-lg shadow-lg hover:shadow-xl transition-all duration-300"
+              className="inline-flex items-center gap-3 bg-green-500 text-black px-12 py-4 rounded-full font-bold text-lg shadow-lg hover:shadow-2xl hover:bg-green-400 transition-all duration-300"
             >
               <Mail size={22} />
               Get In Touch
             </motion.button>
+          </motion.div>
+
+          {/* Interactive Message */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.9 }}
+            className="text-center"
+          >
+            <p className="text-gray-400 text-sm md:text-base">
+              <span className="text-green-400 font-semibold">🎮 Test your QA knowledge and explore my skills in an interactive way! 😊</span>
+              <br />
+              <span className="text-gray-500">P.S. Don't forget to try the fun games via the games menu in the header!</span>
+            </p>
           </motion.div>
 
           {/* Social Links */}
@@ -158,17 +177,22 @@ const Hero = () => {
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ duration: 1, delay: 1.2 }}
-            className="pt-12"
+            transition={{ duration: 1, delay: 1.1 }}
+            className="pt-8"
           >
-            <motion.div
+            <motion.button
+              onClick={() => {
+                const aboutSection = document.getElementById('about');
+                aboutSection?.scrollIntoView({ behavior: 'smooth' });
+              }}
               animate={{ y: [0, 10, 0] }}
               transition={{ duration: 2, repeat: Infinity }}
-              className="text-gray-500 flex justify-center"
+              className="mx-auto flex flex-col items-center gap-3 p-3 bg-green-500 rounded-full hover:bg-green-400 transition-all duration-300 cursor-pointer group"
+              whileHover={{ scale: 1.1 }}
             >
-              <ArrowDown size={24} />
-            </motion.div>
-            <p className="text-xs text-gray-500 mt-2">Explore below</p>
+              <ArrowDown size={24} className="text-black group-hover:scale-110 transition-transform" />
+            </motion.button>
+            <p className="text-sm text-gray-400 mt-4">Explore below</p>
           </motion.div>
         </div>
       </div>
