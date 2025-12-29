@@ -20,7 +20,7 @@ const About = () => {
           </p>
         </motion.div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-start mb-16">
+        <div className="grid lg:grid-cols-2 gap-12 items-start mb-20">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -69,36 +69,37 @@ const About = () => {
               ))}
             </div>
           </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-            className="grid grid-cols-2 gap-6"
-          >
-            {[
-              { icon: '📊', title: '10+ Years', description: 'QA Experience' },
-              { icon: '🎯', title: '13+ Projects', description: 'Successfully Delivered' },
-              { icon: '📈', title: '99.5%', description: 'Bug Detection Rate' },
-              { icon: '🚀', title: 'Agile Expert', description: 'Scrum & DevOps' },
-            ].map((item, index) => (
-              <motion.div
-                key={item.title}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
-                viewport={{ once: true }}
-                whileHover={{ scale: 1.05, y: -5 }}
-                className="bg-slate-800 dark:bg-slate-800 p-6 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 text-center border border-slate-700"
-              >
-                <div className="text-4xl mb-3">{item.icon}</div>
-                <h4 className="text-2xl font-bold text-white dark:text-white mb-1">{item.title}</h4>
-                <p className="text-gray-400 dark:text-gray-400 text-sm">{item.description}</p>
-              </motion.div>
-            ))}
-          </motion.div>
         </div>
+
+        {/* Stats Cards - Full Width */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-12"
+        >
+          {[
+            { icon: '🎖️', title: '10+ Years', description: 'Quality Assurance Experience' },
+            { icon: '👥', title: '13+ Projects', description: 'Successfully Delivered' },
+            { icon: '🎯', title: '99.5%', description: 'Bug Detection Rate' },
+            { icon: '⚡', title: 'Agile Expert', description: 'Scrum & DevOps Methodologies' },
+          ].map((item, index) => (
+            <motion.div
+              key={item.title}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: index * 0.1 }}
+              viewport={{ once: true }}
+              whileHover={{ scale: 1.05, y: -5 }}
+              className="bg-slate-900/70 backdrop-blur-sm border border-slate-800 p-8 rounded-2xl text-center hover:shadow-lg transition-all duration-300 group cursor-default"
+            >
+              <div className="text-5xl mb-4 group-hover:scale-110 transition-transform duration-300">{item.icon}</div>
+              <h4 className="text-3xl font-bold text-white mb-2">{item.title}</h4>
+              <p className="text-gray-400 text-sm font-medium">{item.description}</p>
+            </motion.div>
+          ))}
+        </motion.div>
       </div>
     </section>
   );
