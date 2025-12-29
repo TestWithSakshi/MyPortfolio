@@ -4,20 +4,20 @@ import { ArrowDown, Mail, Linkedin, Github } from 'lucide-react';
 
 const Hero = () => {
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden bg-black">
+    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden bg-black pt-24">
       
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="text-center space-y-8">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+        <div className="text-center space-y-6">
           {/* Greeting Message */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <h2 className="text-2xl md:text-3xl font-bold text-white mb-6">
+            <h2 className="text-xl md:text-2xl font-bold text-white mb-4">
               G'day ladies, gents, and all you top mates out there! 👋
             </h2>
-            <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-base md:text-lg text-gray-400 max-w-2xl mx-auto leading-relaxed">
               Welcome to my little corner of the web! I'm <span className="font-semibold text-green-400">Vid</span>, your friendly QA mate who's 
               passionate about delivering <span className="font-semibold text-cyan-400">top-notch quality</span>. Whether you're here for a quick 
               squiz or a deep dive into my work, I'm stoked to have you aboard. Let's make something brilliant together! 🚀
@@ -28,7 +28,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
-            className="text-5xl md:text-6xl font-bold"
+            className="text-4xl md:text-5xl lg:text-6xl font-bold mt-6"
           >
             <span className="text-green-400">Quality Assurance</span>
             <br />
@@ -39,7 +39,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.5 }}
-            className="grid grid-cols-1 md:grid-cols-3 gap-6 my-12 max-w-4xl mx-auto"
+            className="grid grid-cols-1 md:grid-cols-3 gap-4 my-8 max-w-4xl mx-auto"
           >
             <motion.div 
               whileHover={{ scale: 1.05 }}
@@ -71,7 +71,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.7 }}
-            className="mb-8 max-w-5xl mx-auto"
+            className="mb-6 max-w-5xl mx-auto"
           >
             <div className="flex flex-wrap justify-center items-center gap-3 md:gap-4">
               {[
@@ -112,7 +112,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 1.0 }}
-            className="flex flex-col sm:flex-row items-center justify-center gap-6"
+            className="flex flex-col sm:flex-row items-center justify-center gap-5 mt-6"
           >
             <motion.button
               onClick={() => {
@@ -164,7 +164,7 @@ const Hero = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1, delay: 1.4 }}
-            className="pt-8"
+            className="pt-6"
           >
             <motion.div
               animate={{ y: [0, 10, 0] }}
