@@ -83,12 +83,8 @@ const Hero = () => {
                 'CI/CD',
                 'Agile',
               ].map((skill, index) => (
-                <motion.button
+                <motion.span
                   key={skill}
-                  onClick={() => {
-                    const contactSection = document.getElementById('contact');
-                    contactSection?.scrollIntoView({ behavior: 'smooth' });
-                  }}
                   initial={{ opacity: 0, scale: 0.8 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ 
@@ -96,12 +92,11 @@ const Hero = () => {
                     delay: 0.8 + index * 0.08,
                   }}
                   whileHover={{ scale: 1.05, boxShadow: '0 0 20px rgba(34, 197, 94, 0.5)' }}
-                  whileTap={{ scale: 0.95 }}
                   className="px-5 py-2 bg-transparent border-2 border-green-500 rounded-full text-sm md:text-base 
-                           font-medium text-green-400 hover:bg-green-500/10 hover:text-green-300 transition-all duration-300 cursor-pointer"
+                           font-medium text-green-400 hover:bg-green-500/10 hover:text-green-300 transition-all duration-300 cursor-default"
                 >
                   {skill}
-                </motion.button>
+                </motion.span>
               ))}
             </div>
           </motion.div>
@@ -111,7 +106,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.8 }}
-            className="pt-4"
+            className="pt-6"
           >
             <motion.button
               onClick={() => {
@@ -127,25 +122,11 @@ const Hero = () => {
             </motion.button>
           </motion.div>
 
-          {/* Interactive Message */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.9 }}
-            className="text-center"
-          >
-            <p className="text-gray-400 text-sm md:text-base">
-              <span className="text-green-400 font-semibold">🎮 Test your QA knowledge and explore my skills in an interactive way! 😊</span>
-              <br />
-              <span className="text-gray-500">P.S. Don't forget to try the fun games via the games menu in the header!</span>
-            </p>
-          </motion.div>
-
           {/* Social Links */}
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ duration: 0.8, delay: 1.0 }}
+            transition={{ duration: 0.8, delay: 0.9 }}
             className="flex justify-center gap-6 pt-6 pb-8"
           >
             <motion.a
