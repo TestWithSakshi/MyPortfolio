@@ -4,19 +4,23 @@ import { ArrowDown, Mail, Linkedin, Github } from 'lucide-react';
 
 const Hero = () => {
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950">
+    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden bg-black">
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center space-y-8">
+          {/* Greeting Message */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto">
-              Hi, I'm <span className="font-semibold text-white">Vid</span> - A passionate QA professional with over 
-              <span className="font-semibold text-green-400"> 10 years of experience</span> in ensuring software excellence 
-              and delivering quality products.
+            <h2 className="text-2xl md:text-3xl font-bold text-white mb-6">
+              G'day ladies, gents, and all you top mates out there! 👋
+            </h2>
+            <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+              Welcome to my little corner of the web! I'm <span className="font-semibold text-green-400">Vid</span>, your friendly QA mate who's 
+              passionate about delivering <span className="font-semibold text-cyan-400">top-notch quality</span>. Whether you're here for a quick 
+              squiz or a deep dive into my work, I'm stoked to have you aboard. Let's make something brilliant together! 🚀
             </p>
           </motion.div>
 
@@ -39,27 +43,27 @@ const Hero = () => {
           >
             <motion.div 
               whileHover={{ scale: 1.05 }}
-              className="bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 rounded-lg p-6 text-center"
+              className="bg-slate-900/50 backdrop-blur-sm border border-slate-800 rounded-lg p-6 text-center"
             >
-              <div className="text-4xl font-bold text-pink-400 mb-2">📍</div>
+              <div className="text-4xl font-bold mb-2">📍</div>
               <h3 className="text-lg font-bold text-white mb-1">Sydney Based</h3>
-              <p className="text-gray-300 text-sm">Australian QA professional</p>
+              <p className="text-gray-400 text-sm">Australian QA professional</p>
             </motion.div>
             <motion.div 
               whileHover={{ scale: 1.05 }}
-              className="bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 rounded-lg p-6 text-center"
+              className="bg-slate-900/50 backdrop-blur-sm border border-slate-800 rounded-lg p-6 text-center"
             >
-              <div className="text-4xl font-bold text-yellow-400 mb-2">⚡</div>
+              <div className="text-4xl font-bold mb-2">⚡</div>
               <h3 className="text-lg font-bold text-white mb-1">Quick Response</h3>
-              <p className="text-gray-300 text-sm">I'll reach out within 3 hours max!</p>
+              <p className="text-gray-400 text-sm">I'll reach out within 3 hours max!</p>
             </motion.div>
             <motion.div 
               whileHover={{ scale: 1.05 }}
-              className="bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 rounded-lg p-6 text-center"
+              className="bg-slate-900/50 backdrop-blur-sm border border-slate-800 rounded-lg p-6 text-center"
             >
-              <div className="text-4xl font-bold text-red-400 mb-2">🎯</div>
+              <div className="text-4xl font-bold mb-2">🎯</div>
               <h3 className="text-lg font-bold text-white mb-1">Quality Focus</h3>
-              <p className="text-gray-300 text-sm">Passionate about delivering excellence</p>
+              <p className="text-gray-400 text-sm">Passionate about delivering excellence</p>
             </motion.div>
           </motion.div>
 
@@ -94,7 +98,7 @@ const Hero = () => {
                     y: -2,
                     transition: { duration: 0.2 }
                   }}
-                  className="relative px-4 py-2 bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 rounded-full text-sm md:text-base 
+                  className="relative px-4 py-2 bg-slate-900/50 backdrop-blur-sm border border-slate-800 rounded-full text-sm md:text-base 
                            font-medium text-gray-300 hover:text-green-400 transition-colors duration-300
                            shadow-sm hover:shadow-md cursor-default"
                 >
@@ -108,7 +112,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 1.0 }}
-            className="flex flex-col sm:flex-row items-center justify-center gap-4"
+            className="flex flex-col sm:flex-row items-center justify-center gap-6"
           >
             <motion.button
               onClick={() => {
@@ -123,7 +127,7 @@ const Hero = () => {
               Get In Touch
             </motion.button>
 
-            <div className="flex items-center gap-3">
+            <div className="flex items-center gap-4">
               <motion.a
                 href="https://linkedin.com/in/vidhyashankarn"
                 target="_blank"
@@ -133,7 +137,7 @@ const Hero = () => {
                 transition={{ duration: 0.6, delay: 1.2 }}
                 whileHover={{ scale: 1.1, y: -2 }}
                 whileTap={{ scale: 0.95 }}
-                className="p-3 bg-slate-800 border border-slate-700 text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 group hover:bg-blue-600"
+                className="p-3 bg-slate-900 border border-slate-800 text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 group hover:bg-blue-600"
                 aria-label="LinkedIn Profile"
               >
                 <Linkedin size={20} className="group-hover:scale-110 transition-transform duration-200" />
@@ -148,7 +152,7 @@ const Hero = () => {
                 transition={{ duration: 0.6, delay: 1.3 }}
                 whileHover={{ scale: 1.1, y: -2 }}
                 whileTap={{ scale: 0.95 }}
-                className="p-3 bg-slate-800 border border-slate-700 text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 group hover:bg-gray-700"
+                className="p-3 bg-slate-900 border border-slate-800 text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 group hover:bg-gray-700"
                 aria-label="GitHub Profile"
               >
                 <Github size={20} className="group-hover:scale-110 transition-transform duration-200" />
