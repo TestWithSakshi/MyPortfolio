@@ -39,9 +39,9 @@ const Header = () => {
         <div className="flex justify-between items-center py-4">
           <motion.div
             whileHover={{ scale: 1.05 }}
-            className="text-2xl font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 dark:from-blue-400 dark:via-purple-400 dark:to-pink-400 bg-clip-text text-transparent"
+            className="text-2xl font-bold bg-gradient-to-r from-green-400 to-cyan-400 bg-clip-text text-transparent"
           >
-            Vinu
+            QAMATE!🦘✨
           </motion.div>
 
           <div className="hidden md:flex items-center space-x-8">

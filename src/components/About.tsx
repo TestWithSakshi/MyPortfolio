@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 const About = () => {
   return (
-    <section id="about" className="py-20 bg-gray-50 dark:bg-gray-900">
+    <section id="about" className="py-20 bg-slate-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -12,10 +12,10 @@ const About = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
-            About <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 dark:from-blue-400 dark:via-purple-400 dark:to-pink-400 bg-clip-text text-transparent">Me</span>
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+            About <span className="text-green-400">Me</span>
           </h2>
-          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-300 dark:text-gray-300 max-w-3xl mx-auto">
             Passionate about delivering excellence through comprehensive testing strategies
           </p>
         </motion.div>
@@ -28,7 +28,7 @@ const About = () => {
             viewport={{ once: true }}
             className="space-y-6"
           >
-            <div className="bg-gradient-to-br from-blue-600 via-purple-600 to-pink-600 dark:from-blue-500 dark:via-purple-500 dark:to-pink-500 rounded-2xl p-8 text-white mb-8">
+            <div className="bg-gradient-to-br from-green-600 via-cyan-600 to-blue-600 rounded-2xl p-8 text-white mb-8">
               <img
                 src="https://images.pexels.com/photos/927022/pexels-photo-927022.jpeg?auto=compress&cs=tinysrgb&w=500"
                 alt="Vidhya Shankar (Vid) - QA Professional"
@@ -40,14 +40,14 @@ const About = () => {
               </p>
             </div>
             
-            <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+            <p className="text-lg text-gray-300 leading-relaxed">
               As a dedicated Quality Assurance professional with over a decade of experience, 
               My expertise spans from manual testing to automated solutions, and quality process optimization.
               I specialize in creating robust testing frameworks and ensuring software reliability 
               across diverse industries.
             </p>
             
-            <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+            <p className="text-lg text-gray-300 leading-relaxed">
               I'm passionate about implementing cutting-edge testing methodologies, mentoring 
               teams, and driving continuous improvement in software quality. My approach combines 
               technical expertise with strategic thinking to deliver exceptional results.
@@ -90,11 +90,11 @@ const About = () => {
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 viewport={{ once: true }}
                 whileHover={{ scale: 1.05, y: -5 }}
-                className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 text-center"
+                className="bg-slate-800 dark:bg-slate-800 p-6 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 text-center border border-slate-700"
               >
                 <div className="text-4xl mb-3">{item.icon}</div>
-                <h4 className="text-2xl font-bold text-gray-900 dark:text-white mb-1">{item.title}</h4>
-                <p className="text-gray-600 dark:text-gray-300 text-sm">{item.description}</p>
+                <h4 className="text-2xl font-bold text-white dark:text-white mb-1">{item.title}</h4>
+                <p className="text-gray-400 dark:text-gray-400 text-sm">{item.description}</p>
               </motion.div>
             ))}
           </motion.div>

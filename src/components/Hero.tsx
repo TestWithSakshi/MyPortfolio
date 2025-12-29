@@ -4,8 +4,7 @@ import { ArrowDown, Mail, Linkedin, Github } from 'lucide-react';
 
 const Hero = () => {
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-white to-purple-50 dark:from-gray-900 dark:via-black dark:to-gray-800"></div>
+    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950">
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center space-y-8">
@@ -14,65 +13,60 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-2">
-              G'day ladies, gents, and all you top mates out there!
-            </h2>
-            <p className="text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-              Welcome to my little corner of the web! I'm Vid, your friendly QA mate who's passionate about delivering top-notch quality. 
-              Whether you're here for a quick squiz or a deep dive into my work, I'm stoked to have you aboard. Let's make something brilliant together!
+            <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto">
+              Hi, I'm <span className="font-semibold text-white">Vid</span> - A passionate QA professional with over 
+              <span className="font-semibold text-green-400"> 10 years of experience</span> in ensuring software excellence 
+              and delivering quality products.
             </p>
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, delay: 0.3 }}
-          >
-            <div className="text-6xl md:text-7xl font-bold">
-              <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 dark:from-blue-400 dark:via-purple-400 dark:to-pink-400 bg-clip-text text-transparent">
-                QAMATE!🦘✨⭐
-              </span>
-            </div>
           </motion.div>
 
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.5 }}
-            className="text-4xl md:text-5xl font-bold"
+            transition={{ duration: 0.8, delay: 0.3 }}
+            className="text-5xl md:text-6xl font-bold"
           >
-            <span className="text-gray-900 dark:text-white">Quality Assurance</span>
+            <span className="text-green-400">Quality Assurance</span>
             <br />
-            <span className="text-gray-900 dark:text-white">Professional</span>
+            <span className="text-white">Professional</span>
           </motion.h1>
 
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.7 }}
-            className="grid grid-cols-1 md:grid-cols-3 gap-8 my-12 max-w-3xl mx-auto"
+            transition={{ duration: 0.8, delay: 0.5 }}
+            className="grid grid-cols-1 md:grid-cols-3 gap-6 my-12 max-w-4xl mx-auto"
           >
-            <div className="text-center">
-              <div className="text-5xl font-bold text-blue-600 dark:text-blue-400 mb-2">📍</div>
-              <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-1">Sydney Based</h3>
-              <p className="text-gray-600 dark:text-gray-300">Australian QA professional</p>
-            </div>
-            <div className="text-center">
-              <div className="text-5xl font-bold text-purple-600 dark:text-purple-400 mb-2">⚡</div>
-              <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-1">Quick Response</h3>
-              <p className="text-gray-600 dark:text-gray-300">I'll reach out within 3 hours max!</p>
-            </div>
-            <div className="text-center">
-              <div className="text-5xl font-bold text-pink-600 dark:text-pink-400 mb-2">🎯</div>
-              <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-1">Quality Focus</h3>
-              <p className="text-gray-600 dark:text-gray-300">Passionate about delivering excellence</p>
-            </div>
+            <motion.div 
+              whileHover={{ scale: 1.05 }}
+              className="bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 rounded-lg p-6 text-center"
+            >
+              <div className="text-4xl font-bold text-pink-400 mb-2">📍</div>
+              <h3 className="text-lg font-bold text-white mb-1">Sydney Based</h3>
+              <p className="text-gray-300 text-sm">Australian QA professional</p>
+            </motion.div>
+            <motion.div 
+              whileHover={{ scale: 1.05 }}
+              className="bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 rounded-lg p-6 text-center"
+            >
+              <div className="text-4xl font-bold text-yellow-400 mb-2">⚡</div>
+              <h3 className="text-lg font-bold text-white mb-1">Quick Response</h3>
+              <p className="text-gray-300 text-sm">I'll reach out within 3 hours max!</p>
+            </motion.div>
+            <motion.div 
+              whileHover={{ scale: 1.05 }}
+              className="bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 rounded-lg p-6 text-center"
+            >
+              <div className="text-4xl font-bold text-red-400 mb-2">🎯</div>
+              <h3 className="text-lg font-bold text-white mb-1">Quality Focus</h3>
+              <p className="text-gray-300 text-sm">Passionate about delivering excellence</p>
+            </motion.div>
           </motion.div>
 
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.9 }}
+            transition={{ duration: 0.8, delay: 0.7 }}
             className="mb-8 max-w-5xl mx-auto"
           >
             <div className="flex flex-wrap justify-center items-center gap-3 md:gap-4">
@@ -91,7 +85,7 @@ const Hero = () => {
                   animate={{ opacity: 1, scale: 1, y: 0 }}
                   transition={{ 
                     duration: 0.6, 
-                    delay: 1.0 + index * 0.1,
+                    delay: 0.9 + index * 0.1,
                     type: "spring",
                     stiffness: 100
                   }}
@@ -100,9 +94,8 @@ const Hero = () => {
                     y: -2,
                     transition: { duration: 0.2 }
                   }}
-                  className="relative px-4 py-2 bg-gradient-to-r from-blue-500/10 to-purple-600/10 
-                           backdrop-blur-sm border border-blue-200/30 dark:border-blue-400/30 rounded-full text-sm md:text-base 
-                           font-medium text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300
+                  className="relative px-4 py-2 bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 rounded-full text-sm md:text-base 
+                           font-medium text-gray-300 hover:text-green-400 transition-colors duration-300
                            shadow-sm hover:shadow-md cursor-default"
                 >
                   <span className="relative z-10">{skill}</span>
@@ -114,7 +107,7 @@ const Hero = () => {
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 1.3 }}
+            transition={{ duration: 0.8, delay: 1.0 }}
             className="flex flex-col sm:flex-row items-center justify-center gap-4"
           >
             <motion.button
@@ -124,7 +117,7 @@ const Hero = () => {
               }}
               whileHover={{ scale: 1.05, y: -2 }}
               whileTap={{ scale: 0.95 }}
-              className="inline-flex items-center gap-3 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 text-white px-8 py-4 rounded-full font-semibold text-lg shadow-lg hover:shadow-xl transition-all duration-300"
+              className="inline-flex items-center gap-3 bg-gradient-to-r from-green-500 to-cyan-500 text-black px-8 py-4 rounded-full font-semibold text-lg shadow-lg hover:shadow-xl transition-all duration-300"
             >
               <Mail size={20} />
               Get In Touch
@@ -137,10 +130,10 @@ const Hero = () => {
                 rel="noopener noreferrer"
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.6, delay: 1.5 }}
+                transition={{ duration: 0.6, delay: 1.2 }}
                 whileHover={{ scale: 1.1, y: -2 }}
                 whileTap={{ scale: 0.95 }}
-                className="p-3 bg-gradient-to-r from-blue-600 to-blue-700 text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 group"
+                className="p-3 bg-slate-800 border border-slate-700 text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 group hover:bg-blue-600"
                 aria-label="LinkedIn Profile"
               >
                 <Linkedin size={20} className="group-hover:scale-110 transition-transform duration-200" />
@@ -152,10 +145,10 @@ const Hero = () => {
                 rel="noopener noreferrer"
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.6, delay: 1.6 }}
+                transition={{ duration: 0.6, delay: 1.3 }}
                 whileHover={{ scale: 1.1, y: -2 }}
                 whileTap={{ scale: 0.95 }}
-                className="p-3 bg-gradient-to-r from-gray-800 to-gray-900 dark:from-gray-700 dark:to-gray-800 text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 group"
+                className="p-3 bg-slate-800 border border-slate-700 text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 group hover:bg-gray-700"
                 aria-label="GitHub Profile"
               >
                 <Github size={20} className="group-hover:scale-110 transition-transform duration-200" />
@@ -166,17 +159,17 @@ const Hero = () => {
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ duration: 1, delay: 1.7 }}
+            transition={{ duration: 1, delay: 1.4 }}
             className="pt-8"
           >
             <motion.div
               animate={{ y: [0, 10, 0] }}
               transition={{ duration: 2, repeat: Infinity }}
-              className="text-gray-400 dark:text-gray-500 flex justify-center"
+              className="text-gray-500 flex justify-center"
             >
               <ArrowDown size={24} />
             </motion.div>
-            <p className="text-sm text-gray-500 dark:text-gray-400 mt-2">Explore below</p>
+            <p className="text-sm text-gray-500 mt-2">Explore below</p>
           </motion.div>
         </div>
       </div>
