@@ -37,7 +37,7 @@ const About = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
-            About <span className="bg-gradient-to-r from-black to-primary-600 dark:from-primary-400 dark:to-primary-300 bg-clip-text text-transparent">Me</span>
+            About <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 dark:from-blue-400 dark:via-purple-400 dark:to-pink-400 bg-clip-text text-transparent">Me</span>
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
             Passionate about delivering excellence through comprehensive testing strategies
@@ -74,7 +74,7 @@ const About = () => {
                   whileInView={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.5, delay: index * 0.1 }}
                   viewport={{ once: true }}
-                  className="bg-primary-100 dark:bg-primary-900/30 text-primary-800 dark:text-primary-300 px-3 py-1 rounded-full text-sm font-medium"
+                  className="bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300 px-3 py-1 rounded-full text-sm font-medium"
                 >
                   {skill}
                 </motion.span>
@@ -89,15 +89,15 @@ const About = () => {
             viewport={{ once: true }}
             className="relative"
           >
-            <div className="bg-gradient-to-br from-black to-primary-600 dark:from-primary-600 dark:to-primary-500 rounded-2xl p-8 text-white">
+            <div className="bg-gradient-to-br from-blue-600 via-purple-600 to-pink-600 dark:from-blue-500 dark:via-purple-500 dark:to-pink-500 rounded-2xl p-8 text-white">
               <img
                 src="https://images.pexels.com/photos/927022/pexels-photo-927022.jpeg?auto=compress&cs=tinysrgb&w=500"
                 alt="Vinu - QA Professional"
                 className="w-full h-64 object-cover rounded-xl mb-6"
               />
-              <h3 className="text-2xl font-bold mb-2">Vidhya Shankar</h3>
-              <p className="text-primary-100 mb-4">QA Professional</p>
-              <p className="text-sm text-primary-100">
+              <h3 className="text-2xl font-bold mb-2">Vidhya Shankar (Vid)</h3>
+              <p className="text-blue-100 mb-4">QA Professional</p>
+              <p className="text-sm text-blue-100">
                 "Quality is not an act, it is a habit. I believe in creating sustainable 
                 testing practices that ensure long-term software excellence."
               </p>
@@ -122,7 +122,7 @@ const About = () => {
               whileHover={{ scale: 1.05, y: -5 }}
               className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 text-center"
             >
-              <highlight.icon className="w-8 h-8 text-primary-600 dark:text-primary-400 mx-auto mb-3" />
+              <highlight.icon className="w-8 h-8 text-blue-600 dark:text-blue-400 mx-auto mb-3" />
               <h4 className="text-2xl font-bold text-gray-900 dark:text-white mb-1">{highlight.title}</h4>
               <p className="text-gray-600 dark:text-gray-300 text-sm">{highlight.description}</p>
             </motion.div>

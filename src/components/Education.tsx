@@ -51,7 +51,7 @@ const Education = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
-            Education & <span className="bg-gradient-to-r from-black to-primary-600 dark:from-primary-400 dark:to-primary-300 bg-clip-text text-transparent">Certifications</span>
+            Education & <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 dark:from-blue-400 dark:via-purple-400 dark:to-pink-400 bg-clip-text text-transparent">Certifications</span>
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
             Continuous learning and professional development in quality assurance
@@ -67,13 +67,13 @@ const Education = () => {
             viewport={{ once: true }}
             className="text-2xl font-bold text-gray-900 dark:text-white mb-8 flex items-center gap-2"
           >
-            <GraduationCap className="text-primary-600 dark:text-primary-400" />
+            <GraduationCap className="text-blue-600 dark:text-blue-400" />
             Academic Background
           </motion.h3>
 
           <div className="relative">
             {/* Timeline line */}
-            <div className="absolute left-4 md:left-1/2 transform md:-translate-x-1/2 h-full w-1 bg-gradient-to-b from-black to-primary-600 dark:from-primary-400 dark:to-primary-300 rounded-full"></div>
+            <div className="absolute left-4 md:left-1/2 transform md:-translate-x-1/2 h-full w-1 bg-gradient-to-b from-blue-600 via-purple-600 to-pink-600 dark:from-blue-400 dark:via-purple-400 dark:to-pink-400 rounded-full"></div>
 
             <div className="space-y-12">
               {education.map((edu, index) => (
