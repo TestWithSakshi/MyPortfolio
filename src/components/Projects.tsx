@@ -1,6 +1,5 @@
-import React from 'react';
 import { motion } from 'framer-motion';
-import { Globe, Smartphone, ShoppingCart, Truck, CreditCard, Building2 } from 'lucide-react';
+import { Globe, Smartphone, ShoppingCart, Truck, Building2 } from 'lucide-react';
 
 const Projects = () => {
   const projects = [
@@ -94,7 +93,7 @@ const Projects = () => {
               <div className="h-48 overflow-hidden">
                 <motion.img
                   src={project.image}
-                  alt={project.title}
+                  alt={project.category}
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                   whileHover={{ scale: 1.1 }}
                 />
@@ -114,7 +113,6 @@ const Projects = () => {
                       {project.category}
                     </span>
                   </div>
-                  <h3 className="text-xl font-bold mb-2">{project.title}</h3>
                 </div>
               </div>
 

@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { Linkedin as LinkedIn, Clock, Github } from 'lucide-react';
 
