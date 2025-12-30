@@ -15,7 +15,7 @@ const Contact = () => {
         >
           <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">Contact Me</h2>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            Feel free to connect via LinkedIn and I shall reach out in max 3hrs.
+            Feel free to connect via LinkedIn and I shall reach out in max 2hrs.
           </p>
         </motion.div>
 
@@ -56,7 +56,7 @@ const Contact = () => {
                 <span className="font-semibold">Quick Response Time</span>
               </div>
               <p className="text-gray-700 dark:text-gray-300 font-medium">
-                I shall reach out within <span className="text-green-500 dark:text-green-400 font-bold">maximum 3 hours</span>
+                I shall reach out within <span className="text-green-500 dark:text-green-400 font-bold">maximum 2 hours</span>
               </p>
             </motion.div>
 
@@ -68,24 +68,24 @@ const Contact = () => {
               className="flex flex-col sm:flex-row gap-4 justify-center"
             >
               <motion.a
-                href="https://linkedin.com/in/vinu-qa"
+                href="https://linkedin.com/in/sakshi-jindal-sj"
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.05, y: -2 }}
                 whileTap={{ scale: 0.95 }}
-               className="inline-flex items-center gap-3 bg-gradient-to-r from-green-500 to-cyan-500 text-black px-6 py-3 rounded-full font-semibold shadow-lg hover:shadow-xl transition-all duration-300"
+                className="inline-flex items-center gap-3 bg-gradient-to-r from-blue-600 to-blue-500 text-white px-6 py-3 rounded-full font-semibold shadow-lg hover:shadow-xl transition-all duration-300"
               >
                 <LinkedIn size={20} />
                 Connect on LinkedIn
               </motion.a>
               
               <motion.a
-                href="https://github.com/vinu-qa"
+                href="https://github.com/TestWithSakshi"
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.05, y: -2 }}
                 whileTap={{ scale: 0.95 }}
-                className="inline-flex items-center gap-3 bg-gradient-to-r from-gray-800 to-gray-900 text-white px-6 py-3 rounded-full font-semibold shadow-lg hover:shadow-xl transition-all duration-300"
+                className="inline-flex items-center gap-3 bg-slate-900 border border-slate-700 text-white px-6 py-3 rounded-full font-semibold shadow-lg hover:shadow-xl hover:bg-slate-800 transition-all duration-300"
               >
                 <Github size={20} />
                 View GitHub

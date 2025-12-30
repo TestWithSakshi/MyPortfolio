@@ -27,7 +27,7 @@ const Hero = () => {
             className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed"
           >
             Hi, I'm <span className="font-semibold text-white">Sakshi</span> - A passionate QA professional with over 
-            <span className="font-semibold text-green-400"> 10 years of experience</span> in 
+            <span className="font-semibold text-green-400"> 6 years of experience</span> in 
             ensuring software excellence and delivering quality products.
           </motion.p>
 
@@ -43,8 +43,8 @@ const Hero = () => {
               className="bg-slate-900/40 backdrop-blur-sm border border-slate-800 rounded-lg p-8 text-center"
             >
               <div className="text-5xl mb-4">📍</div>
-              <h3 className="text-lg font-bold text-white mb-2">Sydney Based</h3>
-              <p className="text-gray-400 text-sm">Australian QA professional</p>
+              <h3 className="text-lg font-bold text-white mb-2">Chandigarh</h3>
+              <p className="text-gray-400 text-sm">Indian QA professional</p>
             </motion.div>
 
             <motion.div 
@@ -53,7 +53,7 @@ const Hero = () => {
             >
               <div className="text-5xl mb-4">⚡</div>
               <h3 className="text-lg font-bold text-white mb-2">Quick Response</h3>
-              <p className="text-gray-400 text-sm">I'll reach out within 3 hours max!</p>
+              <p className="text-gray-400 text-sm">I'll reach out within 2 hours max!</p>
             </motion.div>
 
             <motion.div 
@@ -130,24 +130,24 @@ const Hero = () => {
             className="flex justify-center gap-6 pt-6 pb-8"
           >
             <motion.a
-              href="https://linkedin.com/in/vidhyashankarn"
+              href="https://linkedin.com/in/sakshi-jindal-sj"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}
-              className="p-3 bg-slate-900/40 border border-slate-800 text-white rounded-full hover:bg-blue-600 transition-all duration-300"
+              className="p-3 bg-blue-600/20 border border-blue-500 text-blue-400 rounded-full hover:bg-blue-600 hover:text-white transition-all duration-300"
               aria-label="LinkedIn"
             >
               <Linkedin size={22} />
             </motion.a>
 
             <motion.a
-              href="https://github.com/im-vidhyashankar"
+              href="https://github.com/TestWithSakshi"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}
-              className="p-3 bg-slate-900/40 border border-slate-800 text-white rounded-full hover:bg-gray-700 transition-all duration-300"
+              className="p-3 bg-slate-800/40 border border-slate-700 text-gray-300 rounded-full hover:bg-slate-700 hover:text-white transition-all duration-300"
               aria-label="GitHub"
             >
               <Github size={22} />
