@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 
 const About = () => {
@@ -29,7 +28,7 @@ const About = () => {
             className="space-y-6 order-1 lg:order-1"
           >
             <p className="text-lg text-gray-300 leading-relaxed">
-              As a dedicated Quality Assurance professional with over a decade of experience, 
+              As a dedicated Quality Assurance professional with over 6 years of experience, 
               My expertise spans from manual testing to automated solutions, and quality process optimization.
               I specialize in creating robust testing frameworks and ensuring software reliability 
               across diverse industries.
@@ -68,10 +67,10 @@ const About = () => {
             <div className="bg-gradient-to-br from-green-600 via-cyan-600 to-blue-600 rounded-2xl p-8 text-white">
               <img
                 src="https://images.pexels.com/photos/927022/pexels-photo-927022.jpeg?auto=compress&cs=tinysrgb&w=500"
-                alt="Vidhya Shankar (Vid) - QA Professional"
+                alt="Sakshi Jindal - QA Professional"
                 className="w-full h-64 object-cover rounded-xl mb-6"
               />
-              <h3 className="text-2xl font-bold mb-2">Vidhya Shankar (Vid)</h3>
+              <h3 className="text-2xl font-bold mb-2">Sakshi Jindal</h3>
               <p className="text-blue-100 font-semibold italic">
                 "Quality is not an act, it is a habit. I believe in creating sustainable testing practices that ensure long-term software excellence."
               </p>
@@ -88,9 +87,9 @@ const About = () => {
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-12"
         >
           {[
-            { icon: '🎖️', title: '10+ Years', description: 'Quality Assurance Experience' },
-            { icon: '👥', title: '13+ Projects', description: 'Successfully Delivered' },
-            { icon: '🎯', title: '99.5%', description: 'Bug Detection Rate' },
+            { icon: '🎖️', title: '6+ Years', description: 'Quality Assurance Experience' },
+            { icon: '👥', title: '7+ Projects', description: 'Successfully Delivered' },
+            { icon: '🎯', title: '99%', description: 'Bug Detection Rate' },
             { icon: '⚡', title: 'Agile Expert', description: 'Scrum & DevOps Methodologies' },
           ].map((item, index) => (
             <motion.div

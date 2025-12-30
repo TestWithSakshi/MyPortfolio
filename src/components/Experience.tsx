@@ -1,48 +1,39 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { Calendar, MapPin, Briefcase } from 'lucide-react';
 
 const Experience = () => {
   const experiences = [
     {
-      title: 'Application Analyst',
-      company: 'Sherpa',
-      location: 'Sydney - NSW',
-      period: '2025 - Present',
-      description: 'Leading a team of 8 QA engineers, implementing automated testing frameworks, and establishing quality standards across multiple product lines. Reduced bug escape rate by 40% and improved release cycle efficiency by 35%.',
-      technologies: ['Selenium', 'Cypress', 'Jest', 'Jenkins', 'Kubernetes'],
-    },
-    {
-      title: 'QA Manager',
-      company: 'InnovateSoft Inc.',
-      location: 'Austin, TX',
-      period: '2019 - 2021',
-      description: 'Managed QA operations for enterprise software products, designed comprehensive test strategies, and mentored junior QA professionals. Successfully delivered 15+ major releases with zero critical issues.',
-      technologies: ['TestRail', 'Postman', 'JMeter', 'Docker', 'GitLab CI'],
-    },
-    {
       title: 'Senior QA Engineer',
-      company: 'DataFlow Systems',
-      location: 'Seattle, WA',
-      period: '2017 - 2019',
-      description: 'Developed automated testing suites for microservices architecture, performed API and database testing, and collaborated with development teams in agile environments.',
-      technologies: ['REST Assured', 'MySQL', 'MongoDB', 'JIRA', 'Confluence'],
+      company: 'Aviso AI',
+      location: 'India - Remote',
+      period: '2025 - Present',
+      description: 'Implementing automated testing frameworks, and establishing quality standards across multiple product lines. Reduced bug escape rate by 40% and improved release cycle efficiency by 35%.',
+      technologies: ['Robot Framework', 'Python', 'CI/CD', 'Jenkins', 'Agents'],
     },
     {
-      title: 'QA Engineer',
-      company: 'CloudTech Solutions',
-      location: 'Denver, CO',
-      period: '2015 - 2017',
-      description: 'Executed manual and automated testing for web and mobile applications, created detailed test documentation, and participated in requirement analysis and design reviews.',
-      technologies: ['Appium', 'TestNG', 'Maven', 'Git', 'Bugzilla'],
+      title: 'Senior Software Engineer',
+      company: 'Puresoftware',
+      location: 'Noida, India',
+      period: '2024 - 2025',
+      description: 'Managed QA activities for enterprise software products, designed comprehensive test strategies, and mentored junior QA professionals. Successfully delivered 15+ major releases with zero critical issues.',
+      technologies: ['qTest', 'Postman', 'Selenium', 'Java', 'Playwright', 'Github', 'Typescript', 'Cucumber'],
     },
     {
-      title: 'Junior QA Analyst',
-      company: 'StartupVenture',
-      location: 'Portland, OR',
-      period: '2013 - 2015',
-      description: 'Started career in QA by performing functional testing, regression testing, and user acceptance testing. Learned fundamental testing principles and methodologies.',
-      technologies: ['Manual Testing', 'Excel', 'Test Cases', 'Bug Reporting'],
+      title: 'Test Automation Engineer',
+      company: 'Globant',
+      location: 'Pune, India',
+      period: '2022 - 2024',
+      description: 'Developed automated testing suites for client applications, performed API testing, and collaborated with development teams in agile environments.',
+      technologies: ['REST Assured', 'MySQL', 'Tosca', 'JIRA', 'Confluence', 'TestNG'],
+    },
+    {
+      title: 'Programmer Analyst',
+      company: 'Cognizant Technology Solutions',
+      location: 'Gurgoan, India',
+      period: '2020 - 2022',
+      description: 'Executed manual and automated testing for web and SAP applications, created detailed test documentation, and participated in requirement analysis and design reviews.',
+      technologies: ['Tosca', 'qTest', 'Maven', 'Git'],
     },
   ];
 
@@ -60,7 +51,7 @@ const Experience = () => {
             Professional <span className="text-green-400">Experience</span>
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            A decade of delivering quality software through comprehensive testing strategies
+            Years of delivering quality software through comprehensive testing strategies
           </p>
         </motion.div>
 

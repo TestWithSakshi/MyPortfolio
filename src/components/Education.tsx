@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { Calendar, MapPin } from 'lucide-react';
 
@@ -6,30 +5,24 @@ const Education = () => {
   const education = [
     {
       degree: 'Bachelor of Technology in Computer Science',
-      institution: 'Visvesvaraya Technological University',
+      institution: 'Chandigarh University',
       location: 'India',
-      period: 'Passed out in 2010',
+      period: 'Passed out in 2020',
     },
   ];
 
   const certifications = [
     {
-      name: 'Certified Tester Foundation Level (CTFL)',
-      issuer: 'ISTQB',
-      year: '2019',
-      description: 'ISTQB® CTFL is a globally recognized certification that validates essential software testing knowledge across all delivery methodologies.',
+      name: 'Selenium - Java',
+      issuer: 'Udemy',
+      year: '2023',
+      description: 'Comprehensive course covering Selenium WebDriver with Java for web application testing, including frameworks like TestNG and Maven.',
     },
     {
-      name: 'Professional Scrum Master PSM1',
-      issuer: 'Scrum.org',
-      year: '2019',
-      description: 'PSM I certifies a foundational understanding of Scrum principles and effective application within Scrum Teams.',
-    },
-    {
-      name: 'AWS Certified Cloud Practitioner',
-      issuer: 'Amazon Web Services',
-      year: '2025',
-      description: 'AWS Certified Cloud Practitioner validates foundational, high-level understanding of AWS Cloud services, and terminology.',
+      name: 'Tricentis Tosca Automation Specialist',
+      issuer: 'Tricentis',
+      year: '2020',
+      description: 'Certification validating expertise in using Tricentis Tosca for model-based test automation and risk-based testing approaches.',
     },
   ];
 

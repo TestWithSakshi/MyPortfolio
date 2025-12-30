@@ -1,6 +1,5 @@
-import React from 'react';
 import { motion } from 'framer-motion';
-import { Code, Database, Settings, Users, Zap, CheckSquare, GitBranch } from 'lucide-react';
+import { Code, Database, Users, Zap, CheckSquare, GitBranch } from 'lucide-react';
 
 const Skills = () => {
   const skillCategories = [
@@ -18,19 +17,17 @@ const Skills = () => {
       icon: Zap,
       title: 'Licenced Test Automation',
       skills: [
-         { name: 'TestSigma', level: 80 },
-         { name: 'TestIM', level: 90 },
-         { name: 'Tosca', level: 75 },
-         { name: 'LambdaTest/BrowserStack', level: 88 },
+         { name: 'qTest', level: 80 },
+         { name: 'TestIM', level: 75 },
+         { name: 'Tosca', level: 90 },
       ],
      },
     {
       icon: CheckSquare,
       title: 'Agile & Test Management Tools',
       skills: [
-        { name: 'Scrum/Kanban/Spotify', level: 95 },
+        { name: 'Scrum/Kanban', level: 95 },
         { name: 'Jira/Confluence', level: 92 },
-        { name: 'Zephyr', level: 88 },
         { name: 'TestRail', level: 90 },
         { name: 'X-ray', level: 85 },
        ],
@@ -42,6 +39,7 @@ const Skills = () => {
         { name: 'Postman', level: 90 },
         { name: 'REST Assured', level: 65 },
         { name: 'MySQL', level: 85 },
+        { name: 'GraphQL', level: 70 },
       ],
     },
     {
@@ -51,7 +49,7 @@ const Skills = () => {
         { name: 'Jenkins', level: 90 },
         { name: 'Docker', level: 85 },
         { name: 'GitLab CI', level: 85 },
-        { name: 'AWS', level: 80 },
+        { name: 'GitHub Actions', level: 80 },
       ],
     },
     {
@@ -148,7 +146,7 @@ const Skills = () => {
             </div>
             <div className="text-center">
               <h4 className="font-semibold mb-2">Industry Domains</h4>
-              <p className="text-primary-100 text-sm">Government, E-commerce, Logistics, FinTech, SaaS, Mobile Apps, Enterprise Software</p>
+              <p className="text-primary-100 text-sm">E-commerce, Logistics, FinTech, SaaS, Mobile Apps, Enterprise Software</p>
             </div>
             <div className="text-center">
               <h4 className="font-semibold mb-2">Quality Standards</h4>
