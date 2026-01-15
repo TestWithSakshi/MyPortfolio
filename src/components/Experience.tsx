@@ -6,39 +6,47 @@ const Experience = () => {
     {
       title: 'Senior QA Engineer',
       company: 'Aviso AI',
-      location: 'India - Remote',
-      period: '2025 - Present',
-      description: 'Implementing automated testing frameworks, and establishing quality standards across multiple product lines. Reduced bug escape rate by 40% and improved release cycle efficiency by 35%.',
-      technologies: ['Robot Framework', 'Python', 'CI/CD', 'Jenkins', 'Agents'],
+      location: 'Remote',
+      period: 'Jul 2025 - Present',
+      description: 'Leading automation strategy for UI and API testing by designing scalable frameworks using Playwright, TypeScript, and Cucumber. Automated 1,000+ test cases, reducing manual regression efforts by approximately 75%. Improved test execution stability, performance, and coverage across critical business workflows.',
+      technologies: ['Playwright', 'TypeScript', 'Cucumber', 'Robot Framework', 'Python', 'CI/CD', 'Jenkins'],
     },
     {
       title: 'Senior Software Engineer',
-      company: 'Puresoftware',
+      company: 'PureSoftware',
       location: 'Noida, India',
-      period: '2024 - 2025',
-      description: 'Managed QA activities for enterprise software products, designed comprehensive test strategies, and mentored junior QA professionals. Successfully delivered 15+ major releases with zero critical issues.',
-      technologies: ['qTest', 'Postman', 'Selenium', 'Java', 'Playwright', 'Github', 'Typescript', 'Cucumber'],
+      period: 'Jul 2024 - Jul 2025',
+      description: 'Designed and implemented scalable automation testing frameworks (Playwright, TestNG, Cucumber), executing 1,000+ UI/API test cases, reducing manual regression efforts by 80%. Integrated 200+ unit-level validations into cloud-based CI/CD pipelines using Git and Jenkins, enabling a shift-left approach that resolved bugs 30% faster.',
+      technologies: ['Playwright', 'TestNG', 'Cucumber', 'Selenium', 'Java', 'TypeScript', 'Jenkins', 'Git', 'JIRA', 'qTest'],
     },
     {
       title: 'Test Automation Engineer',
       company: 'Globant',
       location: 'Pune, India',
-      period: '2022 - 2024',
-      description: 'Developed automated testing suites for client applications, performed API testing, and collaborated with development teams in agile environments.',
-      technologies: ['REST Assured', 'MySQL', 'Tosca', 'JIRA', 'Confluence', 'TestNG'],
+      period: 'Jun 2022 - May 2024',
+      description: 'Built and maintained a modular automation suite using Java, Selenium, Playwright, Maven, and TestNG, executing 800+ test cases per release, reducing bug leakage by 35%. Delivered a POC for SAP-based applications, validating feasibility of framework-driven regression testing and reducing execution time by 50%.',
+      technologies: ['Java', 'Selenium', 'Playwright', 'Maven', 'TestNG', 'REST Assured', 'MySQL', 'Tosca', 'JIRA', 'Confluence'],
     },
     {
-      title: 'Programmer Analyst',
+      title: 'Programmer Analyst (QA)',
       company: 'Cognizant Technology Solutions',
-      location: 'Gurgoan, India',
-      period: '2020 - 2022',
-      description: 'Executed manual and automated testing for web and SAP applications, created detailed test documentation, and participated in requirement analysis and design reviews.',
-      technologies: ['Tosca', 'qTest', 'Maven', 'Git'],
+      location: 'Gurgaon, India',
+      period: 'Aug 2020 - Jun 2022',
+      description: 'Designed and implemented automation test scenarios using Tosca for enterprise web applications. Reported and tracked 50+ high-priority defects in JIRA, improving resolution time by 25%. Defined test strategies and mentored 20+ junior QA engineers on automation best practices.',
+      technologies: ['Tosca', 'JIRA', 'qTest', 'Maven', 'Git', 'SQL'],
+    },
+    {
+      title: 'Programmer Analyst Intern (QA)',
+      company: 'Cognizant Technology Solutions',
+      location: 'Pune, India',
+      period: 'Jan 2020 - May 2020',
+      description: 'Performed 100+ systematized test scripts using Tosca for high-availability applications. Supported defect reporting and regression testing cycles, improving release stability by 50%.',
+      technologies: ['Tosca', 'Manual Testing', 'Regression Testing'],
     },
   ];
 
   return (
-    <section id="experience" className="py-20 bg-black">
+    <section id="experience" className="py-20 bg-gray-50 dark:bg-black transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -47,7 +55,7 @@ const Experience = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
             Professional <span className="text-green-400">Experience</span>
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
@@ -67,19 +75,17 @@ const Experience = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: index * 0.1 }}
                 viewport={{ once: true }}
-                className={`relative flex items-center ${
-                  index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'
-                } flex-col md:justify-between`}
+                className={`relative flex items-center ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'
+                  } flex-col md:justify-between`}
               >
                 {/* Timeline dot */}
-                <div className="absolute left-4 md:left-1/2 transform -translate-x-1/2 w-4 h-4 bg-gradient-to-r from-black to-primary-600 dark:from-primary-400 dark:to-primary-300 rounded-full border-4 border-white dark:border-black shadow-lg z-10"></div>
+                <div className="absolute left-4 md:left-1/2 transform -translate-x-1/2 w-4 h-4 bg-gradient-to-r from-black to-primary-600 dark:from-primary-400 dark:to-primary-300 rounded-full border-4 border-gray-50 dark:border-black shadow-lg z-10"></div>
 
                 {/* Content */}
                 <motion.div
                   whileHover={{ scale: 1.02, y: -5 }}
-                  className={`w-full md:w-5/12 ${
-                    index % 2 === 0 ? 'md:pr-8' : 'md:pl-8'
-                  } ml-12 md:ml-0`}
+                  className={`w-full md:w-5/12 ${index % 2 === 0 ? 'md:pr-8' : 'md:pl-8'
+                    } ml-12 md:ml-0`}
                 >
                   <div className="bg-gray-50 dark:bg-gray-800 rounded-xl p-6 shadow-md hover:shadow-lg transition-all duration-300">
                     <div className="flex items-start justify-between mb-4">
@@ -89,7 +95,7 @@ const Experience = () => {
                       </div>
                       <Briefcase className="text-primary-600 dark:text-primary-400 w-6 h-6" />
                     </div>
-                    
+
                     <div className="flex items-center gap-4 mb-4 text-gray-600 dark:text-gray-300">
                       <div className="flex items-center gap-1">
                         <Calendar size={16} />
